@@ -1,0 +1,43 @@
+:root {
+  --primary-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --second-accent-color: #188ce8;
+  --primary-white-color: #ffffff;
+  --second-logo-color: #000000;
+  --hero-bcg: #2f303a;
+  --main-section-bcg: #f5f4fa;
+  --footer-bcg: #2f303a;
+  --card-set-gap: 30px;
+  --icon-primary-color: #afb1b8;
+  --primary-transition-duration: 250ms;
+  --primary-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+/*# sourceMappingURL=main.css.map */
