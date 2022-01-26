@@ -12,16 +12,14 @@
   transition-property: border-color;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
-}
-
-.footer-mail::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-mail:focus {
-  border-color: var(--accent-color);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .footer-button {
@@ -43,6 +41,10 @@
   transition-property: background;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
+  &:focus,
+  &:hover {
+    background: var(--second-accent-color);
+  }
 }
 
 .send-form {
@@ -55,9 +57,4 @@
   width: 24px;
   height: 24px;
   fill: var(--primary-white-color);
-}
-
-.footer-button:focus,
-.footer-button:hover {
-  background: var(--second-accent-color);
 }

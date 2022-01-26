@@ -2,33 +2,31 @@
   background-color: var(--footer-bcg);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.address .container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-
-.address-informations {
-  line-height: 1.71;
-  font-style: normal;
-  margin-top: 20px;
-}
-.address-addres,
-.address-contacts {
-  color: var(--primary-white-color);
-  text-decoration: none;
-}
-.address-contacts:hover,
-.address-contacts:hover {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.address-contacts {
-  display: block;
-  margin-top: 9px;
-  transition-property: color;
-  transition-duration: var(--primary-transition-duration);
-  transition-timing-function: var(--primary-transition-timing-function);
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .address-informations {
+    line-height: 1.71;
+    font-style: normal;
+    margin-top: 20px;
+  }
+  &-addres {
+    color: var(--primary-white-color);
+    text-decoration: none;
+  }
+  &-contacts {
+    display: block;
+    margin-top: 9px;
+    color: var(--primary-white-color);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: var(--primary-transition-duration);
+    transition-timing-function: var(--primary-transition-timing-function);
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }

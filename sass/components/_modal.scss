@@ -16,10 +16,6 @@
   visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5) rotate(90deg);
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -32,15 +28,17 @@
   transition-property: transform;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
-}
-
-.modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.1;
-  color: var(--primary-text-color);
-  text-align: center;
-  margin-bottom: 12px;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5) rotate(90deg);
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-bottom: 12px;
+  }
 }
 
 .input-text,
@@ -69,14 +67,9 @@
   transition-property: border-color;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
-}
-
-.form-input:focus {
-  border-color: var(--accent-color);
-}
-
-.form-input:focus + .input-icon {
-  fill: var(--accent-color);
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .input-wrap {
@@ -91,6 +84,9 @@
   transition-property: fill;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
+  .form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .coments-text {
@@ -107,17 +103,15 @@
   transition-property: border-color;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
-}
-
-.coments-text:focus {
-  border-color: var(--accent-color);
-}
-
-.coments-text::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .check-form {
@@ -125,20 +119,23 @@
   align-items: center;
   line-height: 1.7;
   color: var(--text-color);
-}
-
-.check-form span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 7px;
-  transition-property: background-color, border;
-  transition-duration: var(--primary-transition-duration);
-  transition-timing-function: var(--primary-transition-timing-function);
+  & span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    transition-property: background-color, border;
+    transition-duration: var(--primary-transition-duration);
+    transition-timing-function: var(--primary-transition-timing-function);
+    .terms-input:checked + & {
+      border: none;
+      background-color: var(--accent-color);
+    }
+  }
 }
 
 .text-field {
@@ -162,15 +159,9 @@
   transition-property: fill;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
-}
-
-.terms-input:checked + .check-form span {
-  border: none;
-  background-color: var(--accent-color);
-}
-
-.terms-input:checked + .check-form .check-icon {
-  fill: var(--primary-white-color);
+  .terms-input:checked + .check-form & {
+    fill: var(--primary-white-color);
+  }
 }
 
 .form-button {
@@ -189,11 +180,10 @@
   transition-property: background-color;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
-}
-
-.form-button:focus,
-.form-button:hover {
-  background-color: var(--second-accent-color);
+  &:focus,
+  &:hover {
+    background-color: var(--second-accent-color);
+  }
 }
 
 .modal-button {
@@ -214,9 +204,8 @@
   transition-property: fill;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
-}
-
-.modal-button:focus .modal-button-x,
-.modal-button:hover .modal-button-x {
-  fill: var(--accent-color);
+  .modal-button:focus &,
+  .modal-button:hover & {
+    fill: var(--accent-color);
+  }
 }
