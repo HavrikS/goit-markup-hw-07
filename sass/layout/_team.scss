@@ -51,8 +51,10 @@
   justify-content: center;
 }
 
-.team-social-item + .team-social-item {
-  margin-left: 10px;
+.team-social-item {
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .team-social-link {
@@ -67,16 +69,15 @@
   transition-property: background-color, color;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
 }
 
 .team-social-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 }
