@@ -2,19 +2,14 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-}
-
-.card-text .title {
-  margin-bottom: 4px;
+  & .title {
+    margin-bottom: 4px;
+  }
 }
 
 .card-hover {
   position: relative;
   overflow: hidden;
-}
-
-.card-item:hover .card-hover-text {
-  transform: translateY(0);
 }
 
 .card-hover-text {
@@ -31,44 +26,46 @@
   transition-property: transform;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
+  .card-item:hover & {
+    transform: translateY(0);
+  }
 }
 
-.list .title {
-  color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-decoration: none;
+.list {
+  & .title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+  }
+  & .after-title {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }
-.list .after-title {
-  color: var(--text-color);
-  font-size: 16px;
 
-  line-height: 1.87;
-}
 .card {
   display: block;
   text-decoration: none;
   transition-property: box-shadow;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
-}
-
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-bottom: calc(-1 * var(--card-set-gap));
-}
-
-.card-item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-bottom: var(--card-set-gap);
-}
-
-.card:focus,
-.card:hover {
-  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+  &:focus,
+  &:hover {
+    box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * var(--card-set-gap));
+  }
+  &-item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);
+  }
 }
