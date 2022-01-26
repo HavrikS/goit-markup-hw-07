@@ -35,7 +35,7 @@ img {
 .list {
   list-style: none;
 } */
-body {
+/* body {
   background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
@@ -52,11 +52,11 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 /* ------------------Header---------------------------- */
 
-.page-header {
+/* .page-header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -166,9 +166,9 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-}
+} */
 /* ------------------------hero----------------------------- */
-.hero {
+/* .hero {
   background-color: var(--hero-bcg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
@@ -217,12 +217,12 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--second-accent-color);
-}
+} */
 /* ---------------------section------------------------------ */
 
 /* ----------Наши преимущества------------------ */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -231,9 +231,9 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}
+} */
 
-.features-list {
+/* .features-list {
   display: flex;
   margin-left: calc(-1 * var(--card-set-gap));
 }
@@ -268,11 +268,11 @@ body {
 .features-text {
   color: var(--text-color);
   line-height: 1.71;
-}
+} */
 
 /* -------------Чем мы занимаемся--------------- */
 
-.our-work.section {
+/* .our-work.section {
   padding-top: 0;
 }
 
@@ -320,11 +320,11 @@ body {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
-}
+} */
 
 /* ----------Наша команда--------------------- */
 
-.team-title {
+/* .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -405,11 +405,11 @@ body {
 .team-social-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-}
+} */
 
 /* -----------------------Постоянные клиенты----------------- */
 
-.clients-title {
+/* .clients-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -449,15 +449,11 @@ body {
 .clients-bloc:hover,
 .clients-bloc:focus {
   color: var(--accent-color);
-}
+} */
 
 /* ---------------------footer----------------------------- */
 
-.footer-studio {
-  color: var(--primary-white-color);
-}
-
-.address {
+/* .address {
   background-color: var(--footer-bcg);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -490,8 +486,11 @@ body {
   transition-property: color;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
-}
+} */
 
+/* .footer-studio {
+  color: var(--primary-white-color);
+}
 .right-footer {
   margin-left: 70px;
   flex-grow: 1;
@@ -535,9 +534,9 @@ body {
 .company-social-link:hover,
 .company-social-link:focus {
   background-color: var(--accent-color);
-}
+} */
 
-.footer-mail {
+/* .footer-mail {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -599,11 +598,11 @@ body {
 .footer-button:focus,
 .footer-button:hover {
   background: var(--second-accent-color);
-}
+} */
 
 /* -------------------Portfolio-------------------------- */
 
-.button-container {
+/* .button-container {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -647,11 +646,11 @@ body {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
-}
+} */
 
 /* ---------Карточки----- */
 
-.card-text {
+/* .card-text {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -724,7 +723,7 @@ body {
 .card:focus,
 .card:hover {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
-}
+} */
 
 /* ---------------Модальное окно------------------ */
 

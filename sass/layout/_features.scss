@@ -1,0 +1,36 @@
+.features-list {
+  display: flex;
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.features-list-bloc {
+  background-color: #f5f4fa;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.features-list-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features-list-title {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
+
+.features-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.features-text {
+  color: var(--text-color);
+  line-height: 1.71;
+}
