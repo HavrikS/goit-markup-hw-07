@@ -727,7 +727,7 @@ img {
 
 /* ---------------Модальное окно------------------ */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -948,4 +948,4 @@ img {
 .modal-button:focus .modal-button-x,
 .modal-button:hover .modal-button-x {
   fill: var(--accent-color);
-}
+} */
