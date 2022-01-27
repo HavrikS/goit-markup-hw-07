@@ -2,21 +2,14 @@
   background-color: var(--footer-bcg);
   padding-top: 60px;
   padding-bottom: 60px;
-  .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-  }
-  .address-informations {
-    line-height: 1.71;
-    font-style: normal;
-    margin-top: 20px;
-  }
-  &-addres {
+}
+
+.company {
+  &__addres {
     color: var(--primary-white-color);
     text-decoration: none;
   }
-  &-contacts {
+  &__contacts {
     display: block;
     margin-top: 9px;
     color: var(--primary-white-color);
@@ -29,4 +22,16 @@
       color: rgba(255, 255, 255, 0.6);
     }
   }
+}
+
+.address-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.address-informations {
+  line-height: 1.71;
+  font-style: normal;
+  margin-top: 20px;
 }
