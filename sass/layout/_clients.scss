@@ -18,21 +18,20 @@
     height: 60px;
     fill: currentColor;
   }
-}
-
-.clients-list__bloc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid currentColor;
-  border-radius: 4px;
-  height: 92px;
-  color: var(--icon-primary-color);
-  transition-property: color;
-  transition-duration: var(--primary-transition-duration);
-  transition-timing-function: var(--primary-transition-timing-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  &__bloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    height: 92px;
+    color: var(--icon-primary-color);
+    transition-property: color;
+    transition-duration: var(--primary-transition-duration);
+    transition-timing-function: var(--primary-transition-timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
