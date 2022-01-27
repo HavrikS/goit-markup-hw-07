@@ -397,7 +397,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header-nav {
+.page-nav {
   display: flex;
   align-items: center;
 }
@@ -411,50 +411,21 @@ body {
   margin-right: 93px;
 }
 
-.web {
+.logo__web {
   color: var(--accent-color);
 }
 
-.studio {
+.logo__studio {
   color: var(--second-logo-color);
 }
 
-.site-nav.list {
+.site-nav {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.contacts.list {
-  display: flex;
-  margin-left: auto;
-}
-
-.contacts-item .link {
-  display: flex;
-  align-items: center;
-}
-
-.contacts-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.icon-smartphone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.icon-mail {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-  align-items: center;
-}
-
-.site-nav .link {
+.site-nav__link {
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -465,15 +436,15 @@ body {
   transition-timing-function: var(--primary-transition-timing-function);
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav__item--current {
   color: var(--accent-color);
 }
 
-.site-nav .link.current::after {
+.site-nav__item--current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -485,15 +456,26 @@ body {
   border-radius: 2px;
 }
 
-.site-nav-item {
+.site-nav__item {
   position: relative;
 }
 
-.site-nav-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts .link {
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
   color: var(--text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -504,8 +486,23 @@ body {
   transition-timing-function: var(--primary-transition-timing-function);
 }
 
-.contacts .link:hover, .contacts .link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
+}
+
+.contacts__icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts__icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+  align-items: center;
 }
 
 .hero {
@@ -769,7 +766,7 @@ body {
   color: var(--accent-color);
 }
 
-.footer-studio {
+.logo__studio--white {
   color: var(--primary-white-color);
 }
 
