@@ -647,7 +647,7 @@ body {
   margin-bottom: 50px;
 }
 
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -655,7 +655,7 @@ body {
   margin-bottom: 50px;
 }
 
-.team-after-title {
+.team-item__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -679,7 +679,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-text {
+.team-item__text {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -687,23 +687,23 @@ body {
   margin-bottom: 16px;
 }
 
-.team-item-text {
+.team-item__blok {
   background-color: var(--primary-white-color);
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-social-list {
+.social-list {
   display: flex;
   justify-content: center;
 }
 
-.team-social-item + .team-social-item {
+.social-list__item + .social-list__item {
   margin-left: 10px;
 }
 
-.team-social-link {
+.social-list__link {
   width: 44px;
   height: 44px;
   background-color: var(--primary-white-color);
@@ -717,18 +717,18 @@ body {
   transition-timing-function: var(--primary-transition-timing-function);
 }
 
-.team-social-link:hover, .team-social-link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
 
-.team-social-icon {
+.social-list__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.clients-title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -741,18 +741,18 @@ body {
   margin-left: calc(-1 * var(--card-set-gap));
 }
 
-.clients-list-title {
+.clients-list__title {
   flex-basis: calc(100% / 6 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
 }
 
-.clients-list-icon {
+.clients-list__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
 
-.clients-bloc {
+.clients-list__bloc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -765,7 +765,7 @@ body {
   transition-timing-function: var(--primary-transition-timing-function);
 }
 
-.clients-bloc:hover, .clients-bloc:focus {
+.clients-list__bloc:hover, .clients-list__bloc:focus {
   color: var(--accent-color);
 }
 
